@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/modern.css">
+
+    <title>vodka7k</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                 <span>vodka7k</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="index.html">Ana Sayfa</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="about.html">Hakkımda</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="skill.html">Yetenekler</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="service.html">Hizmetler</a></div>
+                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="contact.html">İletişim</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="about.html">Hakkımda</a>
+                <a href="skill.html">Yetenekler</a>
+                <a href="service.html">Hizmetler</a>
+                <a href="contact.html">İletişim</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="page-content">
+            <div class="page-header" data-aos="fade-down" data-aos-duration="1500">
+                <h1>İletişime Geçin</h1>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h2>İletişim Bilgileri</h2>
+                    <p>Herhangi bir soru veya fırsat için bana ulaşmaktan çekinmeyin.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telefon</h3>
+                                <p>+90 555 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>E-posta</h3>
+                                <p>vodka7k@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                            <div class="contact-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Konum</h3>
+                                <p>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                        <a href="https://discord.gg/ezwin" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/vodka7k" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://open.spotify.com/user/wk36yrtrk0ib1son8y2ixhn20?si=e45bc33ee824431c" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <a href="https://discord.gg/ezwin" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Mesaj Gönder</h2>
+                    <form action="https://formspree.io/f/mwppavbk" method="POST" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Adınız</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-postanız</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Konu</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Mesajınız</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, });
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
